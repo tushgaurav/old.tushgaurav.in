@@ -1,5 +1,5 @@
-// import quotes from "./data.json" assert { type: "json" };
-const quotes = require("./data.json");
+import quotes from "./data.json" assert { type: "json" };
+// const quotes = require("./data.json");
 const QUOTE_COUNT = quotes.quotes.length;
 
 export function getRandomQuote() {
