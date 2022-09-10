@@ -57,7 +57,7 @@ nav {
 }
 
 .container {
-  height: 100vh;
+  min-height: 90vh; /* bad code design */
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
