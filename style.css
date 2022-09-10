@@ -20,6 +20,22 @@ body {
   font-style: normal;
 }
 
+/* Code for Firefox */
+.row::selection {
+  color: var(--background-color);
+  background-color: var(--text-primary-color);
+}
+
+body::-moz-selection {
+  color: var(--background-color);
+  background-color: var(--text-primary-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-primary-color);
+}
+
 .container {
   height: 100vh;
   width: 90%;
@@ -43,12 +59,12 @@ body {
 
 .title {
   font-family: "Rubik", sans-serif;
-  font-size: min(10vw, 8em);
+  font-size: min(7.5vw, 6em);
   color: var(--heading-text-color);
 }
 
 .subtitle {
-  font-size: 2em;
+  font-size: min(1.5em, 3vw);
   font-weight: 400;
 }
 
@@ -61,8 +77,17 @@ button {
   border-radius: 444px;
 }
 
+button:hover {
+  background-color: var(--heading-text-color);
+  color: var(--background-color);
+}
+
 footer {
   padding: 1em;
   position: fixed;
   bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
