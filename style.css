@@ -34,6 +34,10 @@ body::-moz-selection {
   font-weight: 400;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 a {
   text-decoration: none;
   color: var(--text-primary-color);
@@ -49,6 +53,10 @@ nav {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1em 0;
+}
+
+ul {
+  padding: 0;
 }
 
 .nav-links {
