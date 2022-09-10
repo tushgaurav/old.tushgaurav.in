@@ -4,6 +4,7 @@
   --background-color: #f0ebe3;
   --text-primary-color: #000000;
   --heading-text-color: #576f72;
+  --footer-background-color: #f9dcaf;
 }
 
 * {
@@ -29,6 +30,8 @@ body {
 body::-moz-selection {
   color: var(--background-color);
   background-color: var(--text-primary-color);
+  font-style: normal;
+  font-weight: 400;
 }
 
 a {
@@ -37,6 +40,10 @@ a {
 }
 
 /* Navbar Styles */
+.nav-container {
+  background-color: var(--footer-background-color);
+}
+
 nav {
   width: 90%;
   max-width: 1200px;
@@ -47,13 +54,14 @@ nav {
 .nav-links {
   list-style: none;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   gap: 1em;
 }
 
 .nav-link {
   text-decoration: none;
+  color: var(--heading-text-color);
 }
 
 .container {
@@ -79,22 +87,30 @@ nav {
 
 .title {
   font-family: "Rubik", sans-serif;
-  font-size: min(7.5vw, 6em);
+  font-style: normal;
+  font-weight: 400;
+  font-size: min(10vw, 6em);
   color: var(--heading-text-color);
 }
 
 .subtitle {
-  font-size: min(1.5em, 3vw);
+  font-size: min(2em, 5vw);
   font-weight: 400;
+}
+
+.button-row {
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1em 2em;
+  padding: 0.8em 1.8em;
   border: 0.25em solid var(--heading-text-color);
   border-radius: 444px;
+  font-size: 1em;
 }
 
 button:hover {
@@ -103,13 +119,22 @@ button:hover {
 }
 
 footer {
-  padding: 1em;
+  padding: 0.25em;
   position: fixed;
   bottom: 0;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--footer-background-color);
+}
+
+.quote {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  color: var(--heading-text-color);
 }
 
 @media (max-width: 600px) {
