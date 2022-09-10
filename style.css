@@ -36,6 +36,26 @@ a {
   color: var(--text-primary-color);
 }
 
+/* Navbar Styles */
+nav {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1em;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
 .container {
   height: 100vh;
   width: 90%;
@@ -90,4 +110,18 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 600px) {
+  body {
+    /* display: none; */
+  }
+
+  .button-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+  }
 }
