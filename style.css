@@ -153,13 +153,16 @@ button:hover {
 
 footer {
   padding: 0.25em;
-  position: fixed;
-  bottom: 0;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--footer-background-color);
+}
+
+.bottom {
+  position: fixed;
+  bottom: 0;
 }
 
 .quote {
@@ -180,6 +183,11 @@ footer {
 span.fade {
   opacity: 1;
   color: var(--heading-text-color);
+}
+
+.paragraph {
+  padding: 0.5em 0;
+  max-width: 80ch;
 }
 
 @media (max-width: 600px) {
