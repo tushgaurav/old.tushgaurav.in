@@ -234,7 +234,9 @@ input[type="submit"]:hover {
 /* Footer main */
 
 footer {
-  background-color: #fff1dc;
+  padding: 0.25em 0;
+  width: 100%;
+  background-color: var(--footer-background-color);
   color: var(--heading-text-color);
   line-height: 1.5;
 }
@@ -280,7 +282,7 @@ footer a {
 /* Footer legal */
 .ft-legal {
   padding: 0.9375rem 1.875rem;
-  background-color: #f9dcaf;
+  background-color: #ffedd2;
 }
 .ft-legal-list {
   width: 100%;
