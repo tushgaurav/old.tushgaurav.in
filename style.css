@@ -64,6 +64,11 @@ p {
   max-width: 80ch;
 }
 
+.icon {
+  width: 100px;
+  display: ;
+}
+
 /* Navbar Styles */
 .nav-container {
   background-color: var(--footer-background-color);
@@ -150,6 +155,32 @@ button {
   border: 0.25em solid var(--heading-text-color);
   border-radius: 444px;
   font-size: 1em;
+}
+
+/* Download Button Design */
+.download-btn {
+  background-color: rgb(138, 138, 10);
+  border: none;
+  color: white;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 1em;
+  border-radius: 100px;
+}
+
+.download-heading {
+  font-weight: 700;
+}
+
+.download {
+  margin-top: 2em;
+}
+
+/* Darker background on mouse-over */
+.download-btn:hover {
+  color: var(--background-color);
+  background-color: rgb(74, 74, 12);
 }
 
 button:hover {
@@ -248,7 +279,7 @@ input[type="submit"]:hover {
 /* Add a background color and some padding around the form */
 .form-container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: rgb(242, 242, 242);
   padding: 1em;
   width: 60%;
   margin: 1em auto;
@@ -276,12 +307,16 @@ footer a {
 }
 @media only screen and (min-width: 29.8125rem /* 477px */) {
   .ft-main {
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 0.5em;
+    align-items: center;
   }
 }
 @media only screen and (min-width: 77.5rem /* 1240px */) {
   .ft-main {
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 0.5em;
+    align-items: center;
   }
 }
 .ft-main-item {
@@ -323,10 +358,6 @@ footer a {
 }
 
 @media (max-width: 600px) {
-  body {
-    /* display: none; */
-  }
-
   .title {
     font-size: 2.5em;
   }
