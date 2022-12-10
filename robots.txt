@@ -1,0 +1,4 @@
+# robots.txt v1 tushgaurav.in
+User-agent: *
+Disallow: /images
+Disallow: /QuoteEngine # QuoteEngine should not be allowed to be indexed by bots
