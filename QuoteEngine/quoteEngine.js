@@ -1,4 +1,6 @@
 import quotes from "./data.json" assert { type: "json" };
+import text404 from "./404/data.json" assert { type: "json" };
+
 // const quotes = require("./data.json");
 const QUOTE_COUNT = quotes.quotes.length;
 export function getRandomQuote() {
@@ -11,3 +13,7 @@ export function getRandomQuoteWithAuthor() {
   var quote = quotes.quotes[index];
   return Object.values(quote);
 }
+
+// export function get404text(funny) {
+//   var
+// }

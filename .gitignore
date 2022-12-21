@@ -1,0 +1,10 @@
+# Compiled files
+*.o
+*.pyc
+
+# Test output
+*.log
+
+# Dependency directories
+node_modules/
+vendor/
