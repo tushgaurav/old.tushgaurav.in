@@ -4,4 +4,4 @@
 
 ![screenshot](https://i.ibb.co/PC64YDN/image.png "tushgaurav.in Screenshot")
 
-## [Link](https://www.tushgaurav.in/)
+## [Link](https://old.tushgaurav.in/)
